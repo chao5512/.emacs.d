@@ -9,7 +9,7 @@
 
 ;; CODE:
 
-(setq evan/font-name "Iosevka Semibold"
+(setq evan/font-name "Fira Code"
 	  evan/font-style "Regular"
 	  evan/font-size 22)
 
@@ -45,12 +45,12 @@
   :hook (after-init . beacon-mode))
 
 ;; 主题包
-;; (use-package 
-;;   doom-themes 
-;;   :ensure t
-;;   :defer
-;;   ;; :config (load-theme 'doom-dracula t))
-;;   )
+ (use-package 
+   doom-themes 
+   :ensure t
+   :defer
+   :config (load-theme 'doom-solarized-light t))
+   ;;)
 ;; (use-package
 ;;   spacemacs-common
 ;;   :ensure spacemacs-theme
@@ -73,11 +73,11 @@
   :ensure t
   :config
   ;; 经纬度，可以在https://www.latlong.net/获取，默认是广州的
-  (setq calendar-latitude 23.130280
-		calendar-longitude 113.288879)
+  (setq calendar-latitude 39.918163
+		calendar-longitude 116.403618)
   ;; sunrise 白天用的主题 sunset 晚上用的主题
-  (setq circadian-themes '((:sunrise . modus-operandi)
-						   (:sunset . modus-vivendi)))
+  (setq circadian-themes '((:sunrise . doom-solarized-light)
+						   (:sunset . doom-soarized-dark)))
   (circadian-setup))
 
 
