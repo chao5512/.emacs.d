@@ -88,6 +88,7 @@
   :ensure t
   :hook ('org-mode . 'org-bullets-mode)
   :custom
-  (org-bullets-bullet-list '("☰" "☷" "✿" "☭")))
+  (org-bullets-bullet-list '("☰" "☷" "✿" "☭"))
+  (org-indent-mode))
 
 (provide 'init-org)
