@@ -1,8 +1,14 @@
+;; 延迟加载的两个方法
 (require '+autoload)
+;; 一些基础函数定义 比如窗口移动
 (require '+config)
+;; package 相关配置
 (require 'init-package)
+;; 一些基础配置
 (require 'init-basic)
+;; ui
 (require 'init-ui)
+;; key map
 (require 'init-keybind)
 (require 'init-tools)
 (require 'init-complete)

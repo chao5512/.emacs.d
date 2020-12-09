@@ -16,7 +16,7 @@
 ;; 设置光标颜色
 ;; (set-cursor-color "green2")
 ;; 设置光标样式
-(setq-default cursor-type 'box)
+(setq-default cursor-type 'bar)
 ;; 去除默认启动界面
 (setq inhibit-startup-message nil)
 ;; 设置英文字体
@@ -115,15 +115,14 @@
   :config (turn-on-page-break-lines-mode))
 
 ;; 启动界面
-(use-package 
-  dashboard 
+(use-package dashboard 
   :ensure t 
   :config (dashboard-setup-startup-hook)
   (dashboard-modify-heading-icons '((recents . "file-text") 
                                     (bookmarks . "book")))
   ;; 设置标题
   (setq dashboard-banner-logo-title
-        "欢迎您使用此Emacs配置文件，有任何问题可加QQ群:46689842                  ")
+        "hello chao                  ")
   ;; 设置banner
   (setq dashboard-startup-banner "~/.emacs.d/var/banner/evan-emacs-banner.png") 
   (setq dashboard-center-content t) 

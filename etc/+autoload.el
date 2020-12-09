@@ -7,16 +7,17 @@
 ;; 切换透明
 ;;;###autoload
 (defun +evan/toggle-transparency ()
-        (interactive)
-        (let ((alpha (frame-parameter nil 'alpha)))
-          (set-frame-parameter
-           nil 'alpha
-           (if (eql (cond ((numberp alpha) alpha)
-                          ((numberp (cdr alpha)) (cdr alpha))
-                          ;; Also handle undocumented (<active> <inactive>) form.
-                          ((numberp (cadr alpha)) (cadr alpha)))
-                    100)
-               '(92 . 92) '(100 . 100)))))
+  "把frame-parameter在(92 . 92)和(100 . 100)之间转换"
+  (interactive)
+  (let ((alpha (frame-parameter nil 'alpha)))
+	(set-frame-parameter
+	 nil 'alpha
+	 (if (eql (cond ((numberp alpha) alpha)
+					((numberp (cdr alpha)) (cdr alpha))
+					;; Also handle undocumented (<active> <inactive>) form.
+					((numberp (cadr alpha)) (cadr alpha)))
+			  100)
+		 '(92 . 92) '(100 . 100)))))
 
 (provide '+autoload)
 

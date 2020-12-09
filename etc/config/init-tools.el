@@ -1,20 +1,22 @@
 
 (push '(if (file-exists-p "~/.emacs.d/site-lisp/emacs-application-framework") 
-		   (use-package 
-			 eaf
-			 :load-path "~/.emacs.d/site-lisp/emacs-application-framework" 
-			 :custom (eaf-find-alternate-file-in-dired t)
-			 (eaf-proxy-type "socks5")
-			 (eaf-proxy-host "127.0.0.1")
-			 (eaf-proxy-port "1088")
+		   (use-package eaf
+			 :load-path "~/.emacs.d/site-lisp/emacs-application-framework"
+			 
+			 :custom
+			 (eaf-find-alternate-file-in-dired t)
+			 ;;(eaf-proxy-type "socks5")
+			 ;;(eaf-proxy-host "127.0.0.1")
+			 ;;(eaf-proxy-port "1080")
 			 (browse-url-browser-function 'eaf-open-browser)
+			 
 			 :config
 			 ;; eaf markdown 预览所需要的
 			 (use-package grip-mode
 			   :ensure t
 			   :after eaf)
 			 (defalias 'browse-web #'eaf-open-browser)
-			 (setq eaf-grip-token "32872f2ccde165e5d36548619681c7b7e7ec8793")
+			 (setq eaf-grip-token "886f1f1c4aa14fbdc62e7611d471aaceeae7f415")
 			 (eaf-setq eaf-pdf-dark-mode "true")
 			 (eaf-setq eaf-browser-dark-mode "true") 
 			 (eaf-setq eaf-mindmap-dark-mode "true")
@@ -281,8 +283,8 @@
 (use-package rotate
   :ensure t)
 
-(use-package netease-cloud-music
-  :load-path "~/.emacs.d/site-lisp/netease-cloud-music.el")
+;;(use-package netease-cloud-music
+;;:load-path "~/.emacs.d/site-lisp/netease-cloud-music.el")
 (provide 'init-tools)
 
 

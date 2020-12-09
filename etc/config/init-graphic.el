@@ -10,5 +10,4 @@
   (dolist (elisp-code graphic-only-plugins-setting)
 			  (eval elisp-code)))
 
-
 (provide 'init-graphic)

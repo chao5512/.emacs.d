@@ -14,7 +14,6 @@
 ;; 设置缓存文件/杂七杂八的文件存放的地址
 (setq user-emacs-directory "~/.emacs.d/var")
 
-
 ;; 设置自动保存路径前缀
 (setq auto-save-list-file-prefix "~/.emacs/var/auto-save-list/.saves-")
 ;; 设置eshell历史记录
@@ -27,7 +26,7 @@
 (tool-bar-mode -1)
 
 ;; 关闭菜单栏
-(menu-bar-mode -1)
+;;(menu-bar-mode 1)
 
 ;; 自动刷新被修改过的文件
 (global-auto-revert-mode 1)
@@ -83,10 +82,11 @@
 
 ;; 创建新行的动作
 ;; 回车时创建新行并且对齐
-(global-set-key (kbd "RET") 'newline-and-indent)
+;;(global-set-key (kbd "RET") 'newline-and-indent)
 ;; 取消对齐创建的新行
-(global-set-key (kbd "S-<return>") 'comment-indent-new-line)
-
+;;(global-set-key (kbd "S-<return>") 'comment-indent-new-line)
+;; org-mode中自动换行
+(setq truncate-lines t)
 ;; 让光标无法离开视线
 (setq mouse-yank-at-point nil)
 
@@ -185,7 +185,7 @@
 			  :font "Sarasa Mono SC-16"
 			  :internal-border-width 10))
   (setq default-input-method "rime"
-		rime-show-candidate 'posframe))
+		rime-show-candidate 'posframe)) 
 
 ;; 饥饿删除（一次性删除多个连续的空白符）
 (use-package hungry-delete

@@ -48,7 +48,8 @@ WAY是方向，可选值为p,n,f,b，分别对应上下左右
 
 
 ;; 打开emacs配置文件夹
-(defun open-init-dired () 
+(defun open-init-dired ()
+  "打开emacs配置文件夹"
   (interactive) 
   (dired "~/.emacs.d/"))
 

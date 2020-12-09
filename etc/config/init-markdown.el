@@ -31,4 +31,12 @@
 											 :size evan/font-size)))
 	(message "无法找到%s字体，你可以更换其他字体或安装它让这条消息消失." evan/font-name)))
 
+;; markdown start
+ (use-package markdown-mode
+   :ensure t
+   :mode (("README\\.md\\'" . gfm-mode)
+          ("\\.md\\'" . markdown-mode)
+          ("\\.markdown\\'" . markdown-mode))
+   :init (setq markdown-command "pandoc"))
+
 (provide 'init-markdown)
