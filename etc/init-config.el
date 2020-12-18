@@ -27,4 +27,6 @@
 (require 'init-scheme)
 
 (require 'init-graphic)
+(require 'init-evil)
+(require 'init-GTD)
 (provide 'init-config)

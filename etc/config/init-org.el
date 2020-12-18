@@ -1,4 +1,5 @@
 (require 'org-capture)
+;; 为了使用<s补全
 (require 'org-tempo)
 
 (use-package 

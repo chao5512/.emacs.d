@@ -60,7 +60,7 @@
  '(objed-cursor-color "#dc322f")
  '(org-startup-indented t)
  '(package-selected-packages
-   '(flucui-themes all-the-icons-ivy-rich geiser lua-mode simple-httpd htmlize modern-cpp-font-lock ccls lsp-java python-black live-py-mode treemacs-persp treemacs-magit treemacs-projectile counsel-projectile magit markdown-mode+ org-bullets youdao-dictionary yasnippet-snippets which-key web-mode use-package undo-tree try sudo-edit smartparens rotate rime rainbow-delimiters quickrun projectile perspeen pdf-tools nyan-mode modus-vivendi-theme modus-operandi-theme major-mode-hydra lsp-ui lsp-python-ms js2-mode info-colors indent-guide hungry-delete howdoyou grip-mode flycheck emojify doom-themes doom-modeline dired-posframe dashboard dap-mode counsel company-box circadian bongo beacon amx all-the-icons-dired))
+   '(evil org-download flucui-themes all-the-icons-ivy-rich geiser lua-mode simple-httpd htmlize modern-cpp-font-lock ccls lsp-java python-black live-py-mode treemacs-persp treemacs-magit treemacs-projectile counsel-projectile magit markdown-mode+ org-bullets youdao-dictionary yasnippet-snippets which-key web-mode use-package undo-tree try sudo-edit smartparens rotate rime rainbow-delimiters quickrun projectile perspeen pdf-tools nyan-mode modus-vivendi-theme modus-operandi-theme major-mode-hydra lsp-ui lsp-python-ms js2-mode info-colors indent-guide hungry-delete howdoyou grip-mode flycheck emojify doom-themes doom-modeline dired-posframe dashboard dap-mode counsel company-box circadian bongo beacon amx all-the-icons-dired))
  '(pdf-view-midnight-colors (cons "#556b72" "#FDF6E3"))
  '(rustic-ansi-faces
    ["#FDF6E3" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#556b72"])
